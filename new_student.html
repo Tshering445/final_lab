@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Student</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <a href="home.html">Back to Home Page</a>
+        <div id="formMain">
+            <!-- display the form on clicking the button -->
+            <button id="addStudentButton">Add a new student</button>
+
+            <div id="newStudentFormContainer">
+                <form action="/" id="newStudentForm" onsubmit="validateForm()">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required><br>
+
+                    <label for="Student ID">Student ID:</label>
+                    <input type="number" name="Student ID" id="student ID" value="Student ID"><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" value="age"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required><br>
+
+                    <h2>Choose your gender</h2>
+                    <input type="radio">
+                    <label for="Male">Male</label>
+                    <label for="Female">Female</label>
+                    <label for="other">other</label>
+
+                    <h2>choose a program:</h2>
+                    <select name="name" id="drop">
+                        <option value="DCSN">DCSN</option>
+                        <option value="DMA"></option>
+                    </select>
+                    <h2>Choose at least one hobby:</h2>
+                    <input type="checkbox">
+                    <label for="Dancing">Dancing</label>
+                    <label for="Sleeping">Sleeping</label>
+                    <label for="Music">Music</label>
+                    <label for="Nothing">Nothing</label>
+
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                    
+                </form>
+            </div>
+        </div>
+        
+    </body>
+    <script src="script.js"></script>
+</html>
